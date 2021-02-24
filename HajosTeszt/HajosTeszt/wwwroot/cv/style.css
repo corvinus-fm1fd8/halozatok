@@ -1,0 +1,37 @@
+﻿html {
+    background-color: cornsilk;
+}
+
+h1.haegy {
+    text-align: center;
+    color: darkorchid !important;
+}
+
+div{
+    background-color: cadetblue;
+    color: floralwhite;
+    border: dotted 3px fuchsia;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+p{text-indent:10pt;}
+span.orchid {
+    font-weight: bold;
+    color: darkorchid;
+    font-size: 40px;
+}
+ul, ol{list-style-type:lower-roman; text-align:center;}
+
+a:hover{ color:darkorchid; border: dotted 2px cadetblue; font-weight:bold;}
+a:visited {
+    color: gold;
+    border: dotted 2px floralwhite;
+    font-style:italic;
+}
+img {
+    display: block;
+    margin: auto;
+}
+
+

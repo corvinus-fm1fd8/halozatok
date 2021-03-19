@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="js.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .szép {
+            background-color: fuchsia;
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <div id="mind1">Eredeti szöveg</div>
+
+    <!--document.getElementById("mind1").innerText = "Hello";
+            ezzel a mind1 id-nél található szöveget cseréljük hellora
+
+            ez 2 részre is bontható..először megadjuk a változót,
+            amihez a dGEBI-t kötjük, majd külön az innertextet, így:
+            var piszkálandóElem = document.getElementById("mind1")
+    piszkálandóElem.innerText = "Módosított szöveg"-->
+    <!--document.getElementById("mind1").innerHTML = "<h1>Hello</h1>";
+        ezzel a hellot írattuk ki a mind1-es szöveg helyett, h1-ben-->
+
+
+
+    <!--osztályt hozzá is tudunk és el is tudunk venni kódból, a köv.módon:
+
+        document.getElementById("mind1").classList.add("szép")
+        ezzel a mind1 id-hez tartozó szövegnek adtunk formázást
+
+        document.getElementById("mind1").classList.remove("szép")
+        ezzel eltüntettük
+        -->
+
+
+    <!--új elem létrehozására is van lehetőség.
+
+        var újLink = document.createElement("a")
+    újLink.href = "https://www.uni-corvinus.hu/";
+    újLink.innerText = "Visit Corvinus!";
+    document.getElementById("mind1").innerHTML = ''; //Ürítés
+    document.getElementById("mind1").appendChild(újLink);
+
+        első lépésben megadtuk a változó nevét és típusát
+        majd hozzárendeltünk linket
+        ezután a hozzá tartozó szöveget is megadtuk
+        a szövegét kitöröltük, hogy ne 2x jelenjen meg a visit corvinus
+        ezután a mind1 szövegéhez hozzákapcsoltuk az 'a' taget-->
+
+
+    <!--id-khez eseményt is tudunk rendelni
+
+                document.getElementById("mind1").click = function()
+            {
+            document.getElementById("mind1").classList.toggle("szép")
+        }
+
+            ezzel azt adtuk meg, hogy a mind1 id-jű szövegre ha rákattintunk,
+            akkor egy olyan fv-t hívjunk meg, ami hatására a 'szép' class-szal
+            fog csinosulni.
+
+            ezt külön is meg lehet adni:
+
+            katt = function ()
+        {
+        document.getElementById("mind1").classList.toggle("szép")
+    }
+    document.getElementById("mind1").onclick = katt;
+
+        először is a katt nevű függvényt definiáltuk
+        majd az onclick esemény hatására megmondtuk, hogy ez a fv fusson le
+                -->
+
+
+    <!--window.onload = function () 
+        {
+    console.log("Oldal betöltve...");
+    }
+        ez arra jó, hogy így nem fogunk úgy hivatkozni valamelyik elemre, 
+        hogy az még nem került betöltésre.-->
+</body>
+</html>

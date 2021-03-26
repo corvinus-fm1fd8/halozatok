@@ -1,6 +1,7 @@
 ﻿html, body {
     height: 100%;
 }
+
 div {
     margin: 8px;
     border: 1px dashed slateblue;
@@ -17,12 +18,11 @@ div {
 
 #középső {
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
     flex-grow: 1
 }
 
 #válaszok {
-    
 }
 
 #vezérlő {
@@ -41,20 +41,19 @@ div {
     width: 80px;
 }
 
-.kerdes {
-}
 
-    .kattintható:hover
-{
+
+.kattintható:hover {
     background-color: darkslateblue;
     color: white;
 }
-.rossz:hover {
+
+.rossz {
     background-color: lightsalmon;
     color: white;
 }
-.jó:hover {
+
+.jó {
     background-color: lightgreen;
     color: white;
 }
-

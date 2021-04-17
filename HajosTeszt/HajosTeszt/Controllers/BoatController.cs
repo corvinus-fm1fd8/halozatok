@@ -8,7 +8,7 @@ using SzamHal.Models;
 
 namespace SzamHal.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
     [ApiController]
     public class BoatController : ControllerBase
     {
